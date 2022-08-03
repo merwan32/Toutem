@@ -81,6 +81,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 820px) {
+  .navbar .center {
+    display: none;
+  }
+}
+
 .navbar .center h2 {
   font-family: 'Poppins';
   font-size: 12px;
@@ -116,13 +122,23 @@ body {
 
 .headline {
   margin-top: 69px;
-  height: 802px;
   background: var(--bg);
   z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+.headline .text {
+  width: 550px;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .headline .text {
+    width: 400px;
+  }
 }
 
 .headline .text .title {
@@ -135,6 +151,13 @@ body {
   margin: 269px 0 0 100px;
 }
 
+@media screen and (max-width: 1000px) {
+  .headline .text .title {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
 .headline .text .txt {
   font-style: normal;
   font-weight: 600;
@@ -145,13 +168,23 @@ body {
   margin-left: 100px;
 }
 
+.headline .photo {
+  height: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+  .headline .photo {
+    display: none;
+  }
+}
+
 .headline .photo .pic {
   margin-left: -30px;
 }
 
 .headline .photo .ellips {
-  height: 1231.25px;
   width: 1784.5px;
+  height: 1200px;
   position: absolute;
   right: -1030px;
   top: -500px;
@@ -166,6 +199,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .body .about .box {
@@ -175,7 +210,7 @@ body {
   border-radius: 0px 20px;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-  margin: 0 5px;
+  margin: 3px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,6 +318,12 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+  .body .explore .img {
+    display: none;
+  }
+}
+
 .body .explore .img .ellips {
   position: absolute;
   left: -180px;
@@ -307,6 +348,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body .bestsellers .right {
+  width: 400px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body .bestsellers .right .txt {
@@ -369,6 +426,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .body .bestsellers .left .boxs .box {
@@ -381,7 +443,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 0 15px;
+  margin: 15px;
   overflow: hidden;
   border-radius: 0 20px;
 }
@@ -499,20 +561,23 @@ body {
           justify-content: space-between;
   background-color: #5FD788;
   margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .body .soaps div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 100px;
 }
 
 .body .soaps div .txt {
@@ -543,10 +608,12 @@ body {
   color: var(--color);
   font-style: normal;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .body .soaps img {
-  height: 450px;
+  height: 400px;
+  margin: auto;
 }
 
 .body .blog {
@@ -578,7 +645,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 140px;
+  margin: 30px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -588,8 +657,9 @@ body {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background: var(--bg);
-  margin: 0 10px;
+  margin: 10px;
   overflow: hidden;
+  width: 370px;
 }
 
 .body .blog .blogpost .box .img {
